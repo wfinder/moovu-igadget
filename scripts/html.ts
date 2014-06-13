@@ -13,10 +13,3 @@ $("/html") {
   @import "mappings.ts"
 
 }
-$("//form[@id='subscribe_form']/label") {
-  $label = text()
-  $("./following-sibling::input") {
-    attribute("placeholder", $label)
-  }
-  remove()
-}
